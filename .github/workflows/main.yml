@@ -12,6 +12,12 @@ jobs:
     steps: 
       - name: print a welcome message
         run: echo "Welcome to my first githib actions workflow"
-      
+
+      - name: Checkout Repository
+        uses: actions/Checkout@v7.0.1
+        
+        - name: list files
+        run: ls -la
+        
   
     
